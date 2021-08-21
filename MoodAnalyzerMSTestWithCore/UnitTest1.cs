@@ -19,5 +19,23 @@ namespace MoodAnalyzerMSTestWithCore
             //Assert
             Assert.AreEqual(expected, mood);
         }
+        /// <summary>
+        /// TC 1.2 & 2.1 
+        /// </summary>
+        /// <param name="message"></param>
+        [TestMethod]
+        [DataRow(null)]
+        public void GivenHAPPYMoodShouldReturnHappy(string message)
+        {
+            //Arrange
+            string expected = "HAPPY";            
+            MoodAnalyzer moodAnalyzer = new MoodAnalyzer(message);
+
+            //Act
+            string mood = moodAnalyzer.AnalyzeMood();
+
+            //Assert
+            Assert.AreEqual(expected, mood);
+        }
     }
 }
