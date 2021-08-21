@@ -6,6 +6,7 @@ namespace MoodAnalyzer
     {
         static void Main(string[] args)
         {
+            //Display Message
             Console.WriteLine("Welcome To  Mood Analyzer !");
         }
     }
